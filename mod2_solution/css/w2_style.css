@@ -1,0 +1,97 @@
+h1 {
+    font-family:'Courier New', Courier, monospace;
+    width: 90%;
+    height: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+*{
+    box-sizing: border-box;
+}
+#box{
+    width: 33.3%;
+    height: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 2.5%;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: gray;
+    border: 1px solid black;
+}
+#content{ 
+    background-color: gray;
+    padding: 2px;
+    clear: right;
+    
+    
+}
+#dish_name{
+    width: 80px;
+    height: 25;
+    font-size: 22;
+    text-align: center;
+    border: 1px  solid black;
+    margin: 0px;
+    float: right;
+
+}
+.chicken {
+    background-color: darksalmon;
+}
+.beef {
+    background-color:maroon;
+    color: aliceblue;
+}
+
+.sushi {
+    background-color:darkkhaki;
+}
+/* small devices */
+@media (max-width:767px){
+    #box{
+        width: 83.3%;
+        height: fit-content;
+    }
+}
+/* medium devices */
+@media (min-width:768px) and (max-width:991px){
+
+    #box.left{
+        width: 43%;
+        margin-left: 5%;
+        float: left;
+    }
+    #box.center{
+        width: 43%;
+        margin-right: 5%;
+        float: right;    
+    }
+
+    #box.right{
+        width: 90%;
+        float: left;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+}
+/* big devices */
+@media (min-width: 991px){
+
+    #box{
+        width: 27.3%;
+    }
+    #box.left{
+        margin: 3%;
+        float: left;
+    }
+    #box.center{
+        float: left;
+        margin: 3%;
+    }
+
+    #box.right{
+        margin: 3%;
+        float: right;
+    }
+}
